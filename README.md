@@ -1,7 +1,7 @@
 [![Actions Status](https://github.com/jashparekh/bigquery-action/workflows/Lint/badge.svg?branch=main)](https://github.com/jashparekh/bigquery-action/actions)
 [![Actions Status](https://github.com/jashparekh/bigquery-action/workflows/Unit%20Tests/badge.svg?branch=main)](https://github.com/jashparekh/bigquery-action/actions)
 [![Actions Status](https://github.com/jashparekh/bigquery-action/workflows/Integration%20Test/badge.svg?branch=main)](https://github.com/jashparekh/bigquery-action/actions)
-![Version](https://img.shields.io/static/v1.svg?label=Version&message=0.1.1&color=lightgrey&?link=http://left&link=https://github.com/jashparekh/bigquery-action/tree/v0.1.1)
+![Version](https://img.shields.io/static/v1.svg?label=Version&message=v1&color=lightgrey&?link=http://left&link=https://github.com/jashparekh/bigquery-action/tree/v1)
 
 
 # BigQuery Github Action
