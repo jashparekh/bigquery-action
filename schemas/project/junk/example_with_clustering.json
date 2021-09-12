@@ -1,0 +1,23 @@
+{
+	"clustering": ["Uuid"],
+	"schema": [
+		{
+			"name": "Uuid",
+			"type": "STRING",
+			"mode": "REQUIRED",
+			"description": "UUID"
+		},
+		{
+			"name": "StartTimeUTC",
+			"type": "TIMESTAMP",
+			"mode": "REQUIRED",
+			"description": "Start Time"
+		},
+		{
+			"name": "EndTimeUTC",
+			"type": "TIMESTAMP",
+			"mode": "REQUIRED",
+			"description": "End Time"
+		}
+	]
+}

@@ -1,0 +1,18 @@
+## action.yml
+name: 'BigQuery Action'
+description: 'Github Action to create/update structures on BigQuery'
+author: 'Jash Parekh <me@jashparekh.com>'
+
+inputs:
+  gcp_project:
+    description: 'Name of the GCP Project'
+    required: true
+  dataset_schema_directory:
+    description: 'Path to the directory with schemas. Name of the directory should match with the dataset name in BigQuery'
+    required: true
+  credentials:
+    description: 'Service account to autheticate with BigQuery'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

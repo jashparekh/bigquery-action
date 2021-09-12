@@ -1,0 +1,20 @@
+{
+	"labels": { "table_name": "example_with_labels" },
+	"schema": [
+		{
+			"name": "Uuid",
+			"type": "STRING",
+			"mode": "REQUIRED"
+		},
+		{
+			"name": "StartTimeUTC",
+			"type": "TIMESTAMP",
+			"mode": "REQUIRED"
+		},
+		{
+			"name": "EndTimeUTC",
+			"type": "TIMESTAMP",
+			"mode": "REQUIRED"
+		}
+	]
+}

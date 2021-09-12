@@ -1,0 +1,25 @@
+{
+	"partition": {
+		"type": "time",
+		"definition": {
+			"type": "DAY"
+		}
+	},
+	"schema": [
+		{
+			"name": "Uuid",
+			"type": "STRING",
+			"mode": "REQUIRED"
+		},
+		{
+			"name": "StartTimeUTC",
+			"type": "TIMESTAMP",
+			"mode": "REQUIRED"
+		},
+		{
+			"name": "EndTimeUTC",
+			"type": "TIMESTAMP",
+			"mode": "REQUIRED"
+		}
+	]
+}

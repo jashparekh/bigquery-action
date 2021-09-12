@@ -1,0 +1,21 @@
+name: "Integration Test"
+on:
+  pull_request: {}
+  push:
+      branches: ["main"]
+
+jobs:
+  deploy_schemas:
+    runs-on: ubuntu-latest
+    name: Deploy schemas to BigQuery
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deploy schemas to BigQuery
+        uses: ./ # Uses an action in the root directory
+        env:
+          gcp_project: 'wf-gcp-us-ae-ops-dev'
+          dataset_schema_directory: 'schemas/project/junk'
+          credentials: ${{ secrets.GCP_SERVICE_ACCOUNT }}
