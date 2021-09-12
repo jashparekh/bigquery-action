@@ -1,6 +1,6 @@
 ## action.yml
-name: 'BigQuery Action'
-description: 'Github Action to create/update structures on BigQuery'
+name: 'Google Bigquery "Deploy table, view and other structure definitions" Action for Github Action'
+description: 'Creates a Bigquery structure if it does not exists, else updates it'
 author: 'Jash Parekh <me@jashparekh.com>'
 branding:
   icon: 'activity'
