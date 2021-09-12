@@ -2,7 +2,9 @@
 name: 'BigQuery Action'
 description: 'Github Action to create/update structures on BigQuery'
 author: 'Jash Parekh <me@jashparekh.com>'
-
+branding:
+  icon: 'activity'
+  color: 'orange'
 inputs:
   gcp_project:
     description: 'Name of the GCP Project'
