@@ -1,0 +1,35 @@
+{
+	"partition": {
+		"type": "range",
+		"definition": {
+			"field": "ID",
+			"range": {
+				"start": 1,
+				"end": 100000,
+				"interval": 10
+			}
+		}
+	},
+	"schema": [
+		{
+			"name": "ID",
+			"type": "INTEGER",
+			"mode": "REQUIRED"
+		},
+		{
+			"name": "Uuid",
+			"type": "STRING",
+			"mode": "REQUIRED"
+		},
+		{
+			"name": "StartTimeUTC",
+			"type": "TIMESTAMP",
+			"mode": "REQUIRED"
+		},
+		{
+			"name": "EndTimeUTC",
+			"type": "TIMESTAMP",
+			"mode": "REQUIRED"
+		}
+	]
+}

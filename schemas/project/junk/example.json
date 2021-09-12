@@ -1,0 +1,32 @@
+{
+	"partition": {
+		"type": "time",
+		"definition": {
+			"type": "DAY",
+			"expirationMs": "7776000000",
+			"field": "StartTimeUTC"
+		}
+	},
+	"description": "This is a test table",
+	"labels": { "test": "test" },
+	"schema": [
+		{
+			"name": "Uuid",
+			"type": "STRING",
+			"mode": "REQUIRED",
+			"description": "UUID"
+		},
+		{
+			"name": "StartTimeUTC",
+			"type": "TIMESTAMP",
+			"mode": "REQUIRED",
+			"description": "Start Time"
+		},
+		{
+			"name": "EndTimeUTC",
+			"type": "TIMESTAMP",
+			"mode": "REQUIRED",
+			"description": "End Time"
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+	"type": "view",
+	"view_query": "SELECT * FROM junk.example",
+	"labels": { "test": "test" },
+	"description": "example view"
+}

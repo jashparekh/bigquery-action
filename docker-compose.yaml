@@ -1,0 +1,30 @@
+version: '3.5'
+
+x-build-args: &build_args
+  BUILD_DATE: ${BUILD_DATE:-BUILD_DATE_NOT_SET}
+
+services:
+  devbox: &devbox
+    build:
+      dockerfile: "./docker/devbox.dockerfile"
+      context: "."
+    stdin_open: "true" # docker run -i
+    tty: "true"        # docker run -t
+    volumes:
+      - "./:/app"
+
+  # run all the tests and linting locally
+  # - black & isort will format code to address issues
+  test:
+    <<: *devbox
+    command: "docker/run_tests.sh --format-code"
+
+  lock-requirements:
+    <<: *devbox
+    entrypoint: "/bin/bash"
+    command: "docker/lock_requirements.sh"
+
+volumes:
+  home:
+  env:
+    driver: local
