@@ -54,12 +54,6 @@ Example: `gcp-us-project/dataset_name`
 
 Google Service Account with permission to create objects in the specified project. Can be stored as a [repository secret](https://docs.github.com/en/actions/reference/encrypted-secrets)
 
-## Example
-
-### Basic
-
-The following pipeline will deploy all the schemas to the `gcp-us-project` living under `directory/project/`
-
 ## Schemas
 
 This action uses [GBQ](https://github.com/wayfair-incubator/gbq) to deploy to Google BigQuery.
