@@ -54,11 +54,6 @@ Example: `gcp-us-project/dataset_name`
 
 Google Service Account with permission to create objects in the specified project. Can be stored as a [repository secret](https://docs.github.com/en/actions/reference/encrypted-secrets)
 
-```yaml
-env:
-  gcp_service_account: '{"email": ""}'
-```
-
 ## Example
 
 ### Basic
