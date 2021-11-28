@@ -1,8 +1,5 @@
 version: '3.5'
 
-x-build-args: &build_args
-  BUILD_DATE: ${BUILD_DATE:-BUILD_DATE_NOT_SET}
-
 services:
   devbox: &devbox
     build:
