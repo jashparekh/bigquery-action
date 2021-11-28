@@ -1,11 +1,8 @@
 name: "Unit Tests"
 on:
+  pull_request: {}
   push:
-    branches:
-      - main
-  pull_request_target:
-    branches:
-      - main
+      branches: ["main"]
 
 env:
   PYTHON_VERSION: "3.10"
