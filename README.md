@@ -1,7 +1,7 @@
 [![Actions Status](https://github.com/jashparekh/bigquery-action/workflows/Lint/badge.svg?branch=main)](https://github.com/jashparekh/bigquery-action/actions)
 [![Actions Status](https://github.com/jashparekh/bigquery-action/workflows/Unit%20Tests/badge.svg?branch=main)](https://github.com/jashparekh/bigquery-action/actions)
 [![Actions Status](https://github.com/jashparekh/bigquery-action/workflows/Integration%20Test/badge.svg?branch=main)](https://github.com/jashparekh/bigquery-action/actions)
-![Version](https://img.shields.io/static/v1.svg?label=Version&message=v1&color=lightgrey&?link=http://left&link=https://github.com/jashparekh/bigquery-action/tree/v1)
+![Version](https://img.shields.io/static/v1.svg?label=Version&message=v1&color=lightgrey&?link=http://left&link=https://github.com/jashparekh/bigquery-action/tree/v2)
 
 
 # BigQuery Github Action
@@ -27,7 +27,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy schemas to BigQuery
-        uses: jashparekh/bigquery-action@v1
+        uses: jashparekh/bigquery-action@v2
         env:
           gcp_project: 'gcp-us-project'
           dataset_schema_directory: 'gcp-us-project/dataset_name'
