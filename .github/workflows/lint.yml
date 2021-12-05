@@ -87,5 +87,5 @@ jobs:
       - name: Run mypy
         uses: jashparekh/mypy-action@v2
         with:
-          path: "plugin_scripts/deploy.py tests/test_deploy.py"
+          path: "deploy.py tests/test_deploy.py"
           requirement_files: "requirements.lock"
