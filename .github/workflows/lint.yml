@@ -88,4 +88,4 @@ jobs:
         uses: jashparekh/mypy-action@v2
         with:
           path: "plugin_scripts/deploy.py tests/test_deploy.py"
-          requirement_files: "plugin_scripts/requirements.lock"
+          requirement_files: "requirements.lock"
