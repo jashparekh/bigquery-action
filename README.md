@@ -25,9 +25,9 @@ jobs:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Deploy schemas to BigQuery
-        uses: jashparekh/bigquery-action@v2
+        uses: jashparekh/bigquery-action@v3
         env:
           gcp_project: 'gcp-us-project'
           dataset_schema_directory: 'gcp-us-project/dataset_name'
