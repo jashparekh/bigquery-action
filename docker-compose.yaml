@@ -10,6 +10,15 @@ services:
     volumes:
       - "./:/app"
 
+  service:
+    build:
+      dockerfile: "Dockerfile"
+      context: "."
+    stdin_open: "true" # docker run -i
+    tty: "true"        # docker run -t
+    volumes:
+      - "./:/app"
+
   # run all the tests and linting locally
   # - black & isort will format code to address issues
   test:

@@ -12,4 +12,4 @@ COPY --from=builder /app/plugin_scripts /app/plugin_scripts
 WORKDIR /app
 ENV PYTHONPATH /app
 
-CMD ["/app/plugin_scripts/__init__.py"]
+CMD ["/app/plugin_scripts"]
