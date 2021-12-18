@@ -24,7 +24,7 @@ jobs:
           test-requirements: "true"
 
       - name: Run bandit
-        run: bandit --ini .bandit -r deploy.py
+        run: bandit --ini .bandit -r plugin_scripts tests
 
   black:
     runs-on: ubuntu-latest
@@ -42,7 +42,7 @@ jobs:
           test-requirements: "true"
 
       - name: Run black
-        run: black --check deploy.py tests/test_deploy.py
+        run: black --check plugin_scripts tests
 
   flake8:
     runs-on: ubuntu-latest
@@ -59,7 +59,7 @@ jobs:
           test-requirements: "true"
 
       - name: Run flake8
-        run: flake8 deploy.py tests/test_deploy.py
+        run: flake8 plugin_scripts tests
 
   isort:
     runs-on: ubuntu-latest
@@ -76,7 +76,7 @@ jobs:
           test-requirements: "true"
 
       - name: Run isort
-        run: isort --recursive --check-only deploy.py tests/test_deploy.py
+        run: isort --profile black --check-only plugin_scripts tests
 
   mypy:
     runs-on: ubuntu-latest
@@ -87,5 +87,5 @@ jobs:
       - name: Run mypy
         uses: jashparekh/mypy-action@v2
         with:
-          path: "deploy.py tests/test_deploy.py"
+          path: "plugin_scripts tests"
           requirement_files: "requirements.lock"

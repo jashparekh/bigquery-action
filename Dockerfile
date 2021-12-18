@@ -8,8 +8,8 @@ RUN pip install --target=/app -r requirements.lock
 # A distroless container image with Python and some basics like SSL certificates
 # https://github.com/GoogleContainerTools/distroless
 FROM gcr.io/distroless/python3-debian10
-COPY --from=builder /app /app
+COPY --from=builder /app/plugin_scripts /app/plugin_scripts
 WORKDIR /app
 ENV PYTHONPATH /app
 
-CMD ["/app/deploy.py"]
+CMD ["/app/plugin_scripts"]
