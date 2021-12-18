@@ -40,7 +40,7 @@ pytest --cov plugin_scripts/ tests --cov-report html
 echo "Running MyPy..."
 mypy plugin_scripts tests
 
-echo "Running iSort..."
+echo "Running isort..."
 isort ${ISORT_ACTION} plugin_scripts tests
 
 echo "Running black..."
