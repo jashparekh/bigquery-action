@@ -12,4 +12,4 @@ COPY --from=builder /app /app
 WORKDIR /app
 ENV PYTHONPATH /app
 
-CMD ["/app/deploy.py"]
+CMD ["/app/plugin_scripts"]

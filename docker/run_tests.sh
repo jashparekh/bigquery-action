@@ -35,19 +35,19 @@ while [[ $# -gt 0 ]]; do
 done
 
 # only generate html locally
-pytest --cov deploy tests/test_deploy.py --cov-report html
+pytest --cov plugin_scripts/ tests --cov-report html
 
 echo "Running MyPy..."
-mypy deploy.py tests/test_deploy.py
-
-echo "Running black..."
-black ${BLACK_ACTION} deploy.py tests/test_deploy.py
+mypy plugin_scripts tests
 
 echo "Running iSort..."
-isort ${ISORT_ACTION} deploy.py tests/test_deploy.py
+isort ${ISORT_ACTION} plugin_scripts tests
+
+echo "Running black..."
+black ${BLACK_ACTION} plugin_scripts tests
 
 echo "Running flake8..."
-flake8 deploy.py tests/test_deploy.py
+flake8 plugin_scripts tests
 
 echo "Running bandit..."
-bandit --ini .bandit --quiet -r deploy.py
+bandit --ini .bandit --quiet -r plugin_scripts tests
