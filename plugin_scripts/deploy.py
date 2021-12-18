@@ -60,7 +60,6 @@ def _deploy():
 
 
 def main():
-    print('hi')
     _validate_env_variables()
     if _validate_if_path_exists():
         _deploy()

@@ -13,9 +13,6 @@ env:
 jobs:
   deploy_schemas:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [ "3.6", "3.7", "3.8", "3.9", "3.10" ]
     name: Deploy schemas to BigQuery
     steps:
       # To use this repository's private action,
