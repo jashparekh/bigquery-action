@@ -13,7 +13,7 @@ grpcio==1.46.3
 grpcio-status==1.46.3
 idna==3.3
 packaging==21.3
-pip==22.1.1
+pip==22.1.2
 proto-plus==1.20.5
 protobuf==4.21.1
 pyasn1==0.4.8
