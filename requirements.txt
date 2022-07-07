@@ -26,5 +26,5 @@ rsa==4.8
 setuptools==63.1.0
 six==1.16.0
 typing_extensions==4.3.0
-urllib3==1.26.9
+urllib3==1.26.10
 wheel==0.37.1
