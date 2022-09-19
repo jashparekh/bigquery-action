@@ -1,4 +1,4 @@
-FROM python:3.11.0b4-slim
+FROM python:3.11.0rc2-slim
 
 ARG _USER="lilchz"
 ARG _UID="1001"
